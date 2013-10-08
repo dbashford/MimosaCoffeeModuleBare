@@ -1,4 +1,22 @@
-MimosaCoffeeModuleBare
-======================
+Your Module's Name Here
+===========
+## Overview
 
-A stripped down coffeescript mimosa module, no docs or informational comments
+For more information regarding Mimosa, see http://mimosa.io
+
+## Usage
+
+Add `'???'` to your list of modules.  That's all!  Mimosa will install the module for you when you start up.
+
+## Functionality
+
+
+## Default Config
+
+```
+```
+
+## Example Config
+
+```
+```
