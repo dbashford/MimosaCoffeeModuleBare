@@ -1,8 +1,10 @@
 "use strict"
 
 config = require './config'
+logger = null
 
 registration = (mimosaConfig, register) ->
+  logger = mimosaConfig.log
   e = mimosaConfig.extensions
   register ['add','update','buildFile'],      'afterCompile', _minifyJS, e.javascript
 
