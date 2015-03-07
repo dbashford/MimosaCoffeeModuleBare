@@ -4,15 +4,6 @@ exports.defaults = ->
   minify:
     exclude:[]
 
-exports.placeholder = ->
-  """
-  \t
-
-    # minify:                  #
-      # exclude:[]             #
-                               #
-  """
-
 exports.validate = (config, validators) ->
   errors = []
   #if validators.ifExistsIsObject(errors, "minify config", config.minify)

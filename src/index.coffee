@@ -14,17 +14,17 @@ _minifyJS = (mimosaConfig, options, next) ->
   next()
 
 ###
-registerCommand = (program, retrieveConfig) ->
+registerCommand = (program, logger, retrieveConfig) ->
   program
     .command('foo')
     .description("Do something fooey")
     .action ->
-      retrieveConfig false, config ->
+      retrieveConfig { buildFirst: false }, config ->
+        # execute command code
 ###
 
 module.exports =
   registration:    registration
   #registerCommand: registerCommand
   defaults:        config.defaults
-  placeholder:     config.placeholder
   validate:        config.validate
